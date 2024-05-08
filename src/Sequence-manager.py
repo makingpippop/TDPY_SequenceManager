@@ -68,3 +68,16 @@ class TDSequence:
 # class TDSequenceBlock:
 # 	 def __init__(self):
 # 		  pass
+"""
+Would be nice to call
+
+myOp.MySequence.Add(3).WithValues({"name": "The name", "duration": 10})
+myOp.MySequence.Add(3).WithValues({"name": "The name", "duration": random.randint(1, 10)}) //execute functions for every added block
+
+myOp.MySequence.Get().WithValues({"name": "The name", "duration": 10}) //get all that match the values
+myOp.MySequence.Get(0) //get the first block
+
+Maybe Add() and Get() return a custom list of TDSequenceBlock. But depending on Get or Add the list type is different.
+So both are inherinting from the same custom list class but they have their own methods.
+
+"""
